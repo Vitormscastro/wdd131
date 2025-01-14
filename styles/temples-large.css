@@ -1,0 +1,40 @@
+/* Larger screens (32rem and above) */
+@media (min-width: 32rem) {
+    #hamburger {
+    display: none; /* Hide the hamburger button for larger screens */
+    }
+
+    nav ul {
+    display: flex; /* Show the navigation menu as a horizontal bar */
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    }
+
+    nav ul li {
+    margin: 0;
+    }
+
+    nav ul li a {
+    padding: 0.5rem 1rem;
+    }
+
+    #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    }
+
+    #gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    }
+
+    #gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    }
+
+    footer {
+    font-size: 1rem;
+    padding: 1.5rem;
+    }
+}

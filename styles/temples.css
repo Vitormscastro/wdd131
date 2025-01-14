@@ -1,0 +1,137 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4A148C;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#hamburger {
+    display: block; /* Show the hamburger button by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    display: none; /* Hide the navigation menu by default */
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #4A148C; /* Adjust color as needed */
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #6A1B9A;
+}
+
+/* Responsive image gallery with a maximum 3x3 layout */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 1rem; /* Space between grid items */
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto; /* Center the gallery */
+}
+
+#gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #4A148C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Larger screens (32rem and above) */
+@media (min-width: 32rem) {
+    #hamburger {
+    display: none; /* Hide the hamburger button for larger screens */
+    }
+
+    nav ul {
+    display: flex; /* Show the navigation menu as a horizontal bar */
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    }
+
+    nav ul li {
+    margin: 0;
+    }
+
+    nav ul li a {
+    padding: 0.5rem 1rem;
+    }
+
+    #gallery {
+    grid-template-columns: repeat(3, 1fr); /* Maximum 3 columns */
+    grid-auto-rows: 1fr; /* Automatically size rows */
+    }
+
+    #gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    }
+
+    #gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    }
+
+    footer {
+    font-size: 1rem;
+    padding: 1.5rem;
+    }
+}
+
+/* Small screens (less than 32rem) */
+@media (max-width: 32rem) {
+    #gallery {
+    grid-template-columns: 1fr; /* Single column layout */
+    }
+}
