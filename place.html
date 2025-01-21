@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Castro">
+    <meta name="description" content="Web page activity that displays a place I have lived in.">
+    <title>Brasil</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/brasil-large.webp" media="(min-width: 768px)">
+                <img src="images/brasil-small.webp" alt="Beautiful landscape of Brazil">
+            </picture>
+
+            <section class="data overlay-card">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>8.516 million km²</dd>
+                    <dt>Population:</dt>
+                    <dd>214.3 million</dd>
+                    <dt>Capital:</dt>
+                    <dd>Brasília</dd>
+                    <dt>Languages:</dt>
+                    <dd>Portuguese</dd>
+                    <dt>Currency:</dt>
+                    <dd>Brazilian Real (BRL)</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC-3</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+55</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.br</dd>
+                </dl>
+            </section>
+
+            <section class="weather overlay-card">
+                <h2>Weather</h2>  
+                <img src="images/sunny-logo.svg" alt="Weather icon" class="weather-icon">  
+                <div class="weather-info">  
+                    <p>Temperature: <span id="temperature">25</span>°C</p>  
+                    <p>Conditions: Sunny</p>  
+                    <p>Wind: <span id="windSpeed">6</span> km/h</p>  
+                    <p>Wind Chill: <span id="windChill">calculating...</span></p>  
+                </div>  
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Vitor Castro | Brasil</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
