@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Ayrton Senna Legacy</title>
+    <style>
+        /* Typography */
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Racing+Sans+One&display=swap');
+
+        :root {
+            --primary-yellow: #FFD700;
+            --racing-red: #DC0000;
+            --forest-green: #009C3B;
+            --text-dark: #1a1a1a;
+            --text-light: #ffffff;
+            --bg-dark: #141414;
+        }
+
+        body {
+            font-family: 'Titillium Web', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Racing Sans One', cursive;
+            color: var(--primary-yellow);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 4px solid var(--racing-red);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .color-sample {
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .typography-sample {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .wireframe {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .wireframe img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid var(--primary-yellow);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Site Plan: Ayrton Senna Legacy</h1>
+
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Ayrton Senna Legacy</strong></p>
+            <p>This name was chosen to honor and preserve the memory of one of Formula 1's greatest drivers. The word "Legacy" emphasizes both his historical importance and lasting impact on motorsport.</p>
+            <p>Suggested domain: ayrton-senna-legacy.com</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The Ayrton Senna Legacy website serves as a comprehensive digital tribute to the legendary Formula 1 driver. It aims to:</p>
+            <ul>
+                <li>Educate new generations about Senna's remarkable career and achievements</li>
+                <li>Showcase his most memorable races and championships</li>
+                <li>Share his philosophical approach to racing and life</li>
+                <li>Highlight his humanitarian work and lasting impact on Brazil and motorsport</li>
+            </ul>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What were Ayrton Senna's most significant achievements in Formula 1?</li>
+                <li>How did Senna's racing style influence modern Formula 1 drivers?</li>
+                <li>What charitable work did Senna engage in, and how does his legacy continue today?</li>
+                <li>Where can I find statistics and records from Senna's racing career?</li>
+            </ul>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <div class="color-palette">
+                <div class="color-sample" style="background-color: var(--primary-yellow); color: var(--text-dark);">
+                    Primary Yellow<br>#FFD700<br>Headers, Accents
+                </div>
+                <div class="color-sample" style="background-color: var(--racing-red); color: var(--text-light);">
+                    Racing Red<br>#DC0000<br>Buttons, Important Elements
+                </div>
+                <div class="color-sample" style="background-color: var(--forest-green); color: var(--text-light);">
+                    Forest Green<br>#009C3B<br>Secondary Accents
+                </div>
+                <div class="color-sample" style="background-color: var(--bg-dark); color: var(--text-light);">
+                    Background Dark<br>#141414<br>Main Background
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <div class="typography-sample">
+                <h3>Primary Header Font: Racing Sans One</h3>
+                <p style="font-family: 'Racing Sans One', cursive; font-size: 1.5em;">Used for main headings and titles - AYRTON SENNA</p>
+            </div>
+            <div class="typography-sample">
+                <h3>Body Font: Titillium Web</h3>
+                <p style="font-family: 'Titillium Web', sans-serif;">Used for body text and general content. Selected for its modern, technical appearance that matches the motorsport theme while maintaining excellent readability.</p>
+            </div>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <div class="wireframe">
+                <h3>Mobile View</h3>
+                <svg width="300" height="500" viewBox="0 0 300 500">
+                    <rect x="10" y="10" width="280" height="60" fill="#FFD700" opacity="0.3"/>
+                    <rect x="20" y="25" width="40" height="30" fill="#ffffff" opacity="0.3"/>
+                    <rect x="230" y="30" width="50" height="20" fill="#ffffff" opacity="0.3"/>
+                    
+                    <rect x="10" y="80" width="280" height="150" fill="#DC0000" opacity="0.3"/>
+                    
+                    <rect x="10" y="240" width="280" height="100" fill="#ffffff" opacity="0.3"/>
+                    
+                    <rect x="10" y="350" width="280" height="100" fill="#009C3B" opacity="0.3"/>
+                    
+                    <rect x="10" y="460" width="280" height="30" fill="#FFD700" opacity="0.3"/>
+                </svg>
+
+                <h3>Desktop View</h3>
+                <svg width="800" height="400" viewBox="0 0 800 400">
+                    <rect x="10" y="10" width="780" height="60" fill="#FFD700" opacity="0.3"/>
+                    <rect x="20" y="25" width="40" height="30" fill="#ffffff" opacity="0.3"/>
+                    <rect x="700" y="30" width="80" height="20" fill="#ffffff" opacity="0.3"/>
+                    
+                    <rect x="10" y="80" width="500" height="250" fill="#DC0000" opacity="0.3"/>
+                    <rect x="520" y="80" width="270" height="250" fill="#ffffff" opacity="0.3"/>
+                    
+                    <rect x="10" y="340" width="780" height="50" fill="#009C3B" opacity="0.3"/>
+                </svg>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
