@@ -1,0 +1,65 @@
+/* Custom Fonts */
+.font-racing {
+    font-family: 'Racing Sans One', cursive;
+}
+
+.font-titillium {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Navigation Links */
+.nav-link {
+    color: white;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Championship Card Styles */
+.championship-card {
+    background: linear-gradient(to bottom, #1a1a1a, #141414);
+    border: 1px solid #FFD700;
+    transition: transform 0.3s ease;
+}
+
+.championship-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Buttons */
+.btn-primary {
+    background-color: #DC0000;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b30000;
+}
+
+/* Form Styles */
+.form-input {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+}
+
+.form-input:focus {
+    border-color: #FFD700;
+    outline: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup - Ayrton Senna Legacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body class="bg-[#141414] text-white font-titillium">
+    <header class="sticky top-0 z-50 bg-[#141414] border-b border-[#FFD700]">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-racing text-2xl text-[#FFD700]">AYRTON SENNA</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="newsletter.html" class="nav-link active">Newsletter</a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <button class="md:hidden mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block py-2 px-4">Home</a>
+                <a href="newsletter.html" class="block py-2 px-4 text-[#FFD700]">Newsletter</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <h1 class="font-racing text-4xl text-[#FFD700] mb-8 text-center">JOIN OUR NEWSLETTER</h1>
+        
+        <div class="max-w-md mx-auto">
+            <form id="newsletter-form" class="space-y-6">
+                <div>
+                    <label for="fullName" class="block mb-2">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" required
+                        class="form-input w-full px-4 py-2 rounded-lg" />
+                </div>
+                
+                <div>
+                    <label for="email" class="block mb-2">Email Address*</label>
+                    <input type="email" id="email" name="email" required
+                        class="form-input w-full px-4 py-2 rounded-lg" />
+                </div>
+                
+                <div>
+                    <label for="suggestions" class="block mb-2">Suggestions (Optional)</label>
+                    <textarea id="suggestions" name="suggestions" rows="4"
+                            class="form-input w-full px-4 py-2 rounded-lg"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary w-full py-3 rounded-lg font-semibold">
+                    Receive Newsletter
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-[#141414] border-t border-[#FFD700] py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="year"></span> Vitor Castro</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="references.html" class="text-[#FFD700] hover:underline">References</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+</html>
